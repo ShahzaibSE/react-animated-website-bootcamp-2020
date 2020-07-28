@@ -15,7 +15,7 @@
 }
 
 .toggle:before {
-    content:"+";
+    content:"≡";
     position: absolute;
     top:0;
     left:0;
@@ -24,11 +24,11 @@
     height:100%;
     color:#fff;
     text-align:center;
-    line-height: 45px;
+    line-height: 42px;
     border-radius: 50%;
     background: #000;
     transition: 0.5s;
-    font-weight: bold;
+    // font-weight: bold;
 }
 
 .toggle_active{
