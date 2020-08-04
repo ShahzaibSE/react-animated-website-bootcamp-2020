@@ -1,4 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react'
+import {Link, BrowserRouter as Router} from "react-router-dom";
 import {AddCircle, AddAPhoto} from '@material-ui/icons'
 import {Button} from "@material-ui/core"
 // Assets.
@@ -34,13 +35,12 @@ const Menu = () => {
             <div className="toggle" onClick={handleClassChange}></div>
             <div className={toggleButtonClass ? "overlay_active":"overlay"}></div>
             <div className={toggleButtonClass ? "menu_active":"menu"}>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                </ul>
+                    <ul>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="about">About</Link></li>
+                        <li><Link to="service">Services</Link></li>
+                        <li><Link to="contactus">Contact Us</Link></li>
+                    </ul>
             </div>
         </div>
     )
