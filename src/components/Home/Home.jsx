@@ -1,6 +1,6 @@
 import React from 'react'
 import Typography from "@material-ui/core"
-import useWebAnimations, {fadeIn} from "@wellyshen/use-web-animations"
+import useWebAnimations, {fadeIn,fadeInLeft} from "@wellyshen/use-web-animations"
 // Slider
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
@@ -10,6 +10,10 @@ import landing_page from "./../../images/landing-page.jpg"
 
 
 const Home = () => {
+    // Web Animation API config.
+    const {ref} = useWebAnimations({...fadeIn, timing:{duration: 4000}})
+    const {fade_in_left_ref} = useWebAnimations({...fadeInLeft, timing:{duration: 2000}})
+    //
     let slides = [
         { line1: 'Scale Extended', line2: 'business office', line3: 'services'},
         { line1: 'Innovation and', line2: 'Intelligent technology', line3: 'solutions and services'},
@@ -17,23 +21,13 @@ const Home = () => {
     ];
     return (
         <div>
-            <div>
+            <div ref={ref}>
                 <img id="home_landing_image" src={landing_page} alt="home_landing_pic" />
-                <Slider autoplay={5} infinite={true} slideIndex={2}>
-                {slides.map((slide, index) => <div key={index}>
-                    <h2 className="h2_container">
-                        <div className="h2_text">
-                            <span>{slide.line1}</span>
-                        </div>
-                        <div className="h2_text">
-                            <span>{slide.line2}</span>
-                        </div>
-                        <div className="h2_text">
-                            <span>{slide.line3}</span>
-                        </div>
-                    </h2>
-                </div>)}
-                </Slider>
+                <div>
+                    <h2 className="landing_page_heading" >
+                        Where Innovation Happens
+                    </h2>    
+                </div>
             </div>
         </div>
     )
