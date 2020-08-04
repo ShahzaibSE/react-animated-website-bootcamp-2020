@@ -36,10 +36,10 @@ const Menu = () => {
             <div className={toggleButtonClass ? "overlay_active":"overlay"}></div>
             <div className={toggleButtonClass ? "menu_active":"menu"}>
                     <ul>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="about">About</Link></li>
-                        <li><Link to="service">Services</Link></li>
-                        <li><Link to="contactus">Contact Us</Link></li>
+                        <li><Link to="/" onClick={handleClassChange}>Home</Link></li>
+                        <li><Link to="about" onClick={handleClassChange}>About</Link></li>
+                        <li><Link to="service" onClick={handleClassChange}>Services</Link></li>
+                        <li><Link to="contactus" onClick={handleClassChange}>Contact Us</Link></li>
                     </ul>
             </div>
         </div>
