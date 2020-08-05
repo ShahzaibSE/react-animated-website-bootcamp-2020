@@ -1,13 +1,9 @@
 import React from 'react'
-import Typography from "@material-ui/core"
 import useWebAnimations, {fadeIn,fadeInLeft} from "@wellyshen/use-web-animations"
 import { bounceIn, shake } from 'react-animations';
 import Radium, {StyleRoot} from 'radium';
 import ScrollAnimation from 'react-animate-on-scroll';
 import {Grid} from "@material-ui/core";
-// Slider
-import Slider from 'react-animated-slider';
-import 'react-animated-slider/build/horizontal.css';
 // Assets.
 import "./Home.scss"
 import landing_page from "./../../images/landing-page.jpg"
