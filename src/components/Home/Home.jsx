@@ -4,12 +4,14 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import {StyleRoot} from 'radium';
 import {Grid, Card, CardContent, Typography, CardHeader} from "@material-ui/core";
 import Avatar from '@material-ui/core/Avatar';
+import { red } from '@material-ui/core/colors';
 import {useStyles, animation_styles} from "./Home.style";
 // Assets.
 import "./Home.scss"
 import landing_page from "./../../images/landing-page.jpg"
 import "animate.css/animate.min.css" // Scroller dependency.
 import meeting_in_motion from "./../../images/meeting.gif";
+import { styles } from 'react-animations/lib/swing';
 
 const Home = () => {
     // Web Animation API config.
@@ -23,16 +25,18 @@ const Home = () => {
                 <div ref={ref}>
                     <img id="home_landing_image" src={landing_page} alt="home_landing_pic" />
                     <div>
-                        <h2 className="landing_page_heading" >
-                            Where Innovation Happens
-                        </h2>    
+                       <StyleRoot> 
+                            <h2 className="landing_page_heading" style={animation_styles.landing_heading_animation}>
+                                Where Innovation Happens
+                            </h2>    
+                        </StyleRoot>
                     </div>
                 </div>
             </Grid>
             <Grid item xs={6}>
               <StyleRoot>  
                 <div className="meeting_svg" style={animation_styles.shake_meeting}>
-                    <ScrollAnimation animateIn="fadeInLeft" duration={3}>
+                    <ScrollAnimation animateIn="fadeInLeft" duration={3} offset={100}>
                         <div>
                             <img src={meeting_in_motion} alt="Meeting"/>
                         </div>
@@ -53,6 +57,7 @@ const Home = () => {
                    </StyleRoot> 
                 </div>
             </Grid>
+
             <Grid xs={12}>
                 <Grid container>
                     <Grid item xs={2}>
@@ -61,7 +66,7 @@ const Home = () => {
                                 <Card className={classes.root}>
                                     <CardHeader
                                         avatar={
-                                        <Avatar aria-label="recipe" className={classes.avatar}>
+                                        <Avatar aria-label="recipe" className={classes.revenue_cycle_management}>
                                             R
                                         </Avatar>
                                         }
@@ -84,15 +89,15 @@ const Home = () => {
                                 <Card className={classes.root}>
                                     <CardHeader
                                         avatar={
-                                        <Avatar aria-label="recipe" className={classes.avatar}>
-                                            R
+                                        <Avatar aria-label="recipe" className={classes.staff_augmentation}>
+                                            S
                                         </Avatar>
                                         }
                                     />
                                     <CardContent>
                                        <div> 
                                             <p className="preview_service_revenue_cycle_management_text">
-                                                Revenue Cycle Management
+                                                Staff Augmentation
                                             </p>
                                         </div>
                                     </CardContent>
@@ -109,15 +114,15 @@ const Home = () => {
                                 <Card className={classes.root}>
                                     <CardHeader
                                         avatar={
-                                        <Avatar aria-label="recipe" className={classes.avatar}>
-                                            R
+                                        <Avatar aria-label="recipe" className={classes.payment_posting}>
+                                            P
                                         </Avatar>
                                         }
                                     />
                                     <CardContent>
                                        <div> 
                                             <p className="preview_service_revenue_cycle_management_text">
-                                                Revenue Cycle Management
+                                                Payment Posting
                                             </p>
                                         </div>
                                     </CardContent>
@@ -132,7 +137,7 @@ const Home = () => {
                                 <Card className={classes.root}>
                                     <CardHeader
                                         avatar={
-                                        <Avatar aria-label="recipe" className={classes.avatar}>
+                                        <Avatar aria-label="recipe" className={classes.reason_code_mapping}>
                                             R
                                         </Avatar>
                                         }
@@ -140,7 +145,7 @@ const Home = () => {
                                     <CardContent>
                                        <div> 
                                             <p className="preview_service_revenue_cycle_management_text">
-                                                Revenue Cycle Management
+                                                Reason Code Maping
                                             </p>
                                         </div>
                                     </CardContent>
@@ -155,15 +160,15 @@ const Home = () => {
                                 <Card className={classes.root}>
                                     <CardHeader
                                         avatar={
-                                        <Avatar aria-label="recipe" className={classes.avatar}>
-                                            R
+                                        <Avatar aria-label="recipe" className={classes.product_management}>
+                                            P
                                         </Avatar>
                                         }
                                     />
                                     <CardContent>
                                        <div> 
                                             <p className="preview_service_revenue_cycle_management_text">
-                                                Revenue Cycle Management
+                                                Product Management
                                             </p>
                                         </div>
                                     </CardContent>
@@ -180,15 +185,15 @@ const Home = () => {
                                 <Card className={classes.root}>
                                     <CardHeader
                                         avatar={
-                                        <Avatar aria-label="recipe" className={classes.avatar}>
-                                            R
+                                        <Avatar aria-label="recipe" className={classes.virtual_assistant}>
+                                            V
                                         </Avatar>
                                         }
                                     />
                                     <CardContent>
                                        <div> 
                                             <p className="preview_service_revenue_cycle_management_text">
-                                                Revenue Cycle Management
+                                                Virtual Assistant
                                             </p>
                                         </div>
                                     </CardContent>
@@ -203,15 +208,15 @@ const Home = () => {
                                 <Card className={classes.root}>
                                     <CardHeader
                                         avatar={
-                                        <Avatar aria-label="recipe" className={classes.avatar}>
-                                            R
+                                        <Avatar aria-label="recipe" className={classes.correspondence_management}>
+                                            C
                                         </Avatar>
                                         }
                                     />
                                     <CardContent>
                                        <div> 
                                             <p className="preview_service_revenue_cycle_management_text">
-                                                Revenue Cycle Management
+                                                Correspondence Management
                                             </p>
                                         </div>
                                     </CardContent>
