@@ -106,6 +106,21 @@ const Home = () => {
                         </div>
                     </Grid>
     
+                    <Grid item xs={6}>
+                        <StyleRoot> 
+                            <ScrollAnimation animateIn="fadeInRight" duration={3}>
+                                    <h2 className="services_heading" style={animation_styles.bounceIn}>
+                                            <span>Services.</span>
+                                    </h2>
+                                    <p className="services_overview">
+                                    We offer customized digital services and scalable operational strategies 
+                                    to prepare your Organization ride through the waves of uncertainty in 
+                                    the form of disruptive technology and government regulations so you 
+                                    can deliver accelerated and cost-effective services for your consumers
+                                    </p> 
+                            </ScrollAnimation>
+                        </StyleRoot>
+                    </Grid>
                 </Grid>
 
                 <Grid container>
@@ -177,6 +192,19 @@ const Home = () => {
                             </div>
                         </div>
                     </Grid>
+
+                    {/* <Grid item xs={6}>
+                            <StyleRoot>
+                                <ScrollAnimation animateIn="fadeInRight" duration={3}>
+                                <p className="services_overview">
+                                    We offer customized digital services and scalable operational strategies 
+                                    to prepare your Organization ride through the waves of uncertainty in 
+                                    the form of disruptive technology and government regulations so you 
+                                    can deliver accelerated and cost-effective services for your consumers
+                                </p> 
+                                </ScrollAnimation>  
+                            </StyleRoot>    
+                    </Grid>   */}
                 </Grid>
 
                 <Grid container>
