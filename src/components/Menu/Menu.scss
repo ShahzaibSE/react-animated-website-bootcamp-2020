@@ -26,7 +26,8 @@
     text-align:center;
     line-height: 42px;
     border-radius: 50%;
-    background: #000;
+    // background: #000;
+    background:indigo;
     transition: 0.5s;
     // font-weight: bold;
 }
@@ -34,7 +35,8 @@
 .toggle_active{
     transform: rotate(405deg);
     background: #ffeb3b;
-    color: #000;
+    // color: #000;
+    color: indigo;
 }
 
 // .toggle.active:before {
@@ -62,7 +64,8 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: rgba(0,0,0,0.95);
+    // background: rgba(0,0,0,0.95);
+    background: indigo;
     transition: transform 0.5s;
     z-index: 2147483646;
 }
@@ -75,7 +78,8 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: rgba(0,0,0,0.95);
+    // background: rgba(0,0,0,0.95);
+    background: indigo;
     transition: transform 0.5s;
     transform:scale(100,100);
     z-index: 2147483646;

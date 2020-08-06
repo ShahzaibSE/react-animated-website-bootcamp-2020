@@ -61,7 +61,10 @@ const Home = () => {
             <Grid xs={12}>
                 <Grid container>
                     <Grid item xs={2}>
-                        <div className="preview_services_container">
+                      <ScrollAnimation animateIn="fadeIn" duration={3}>  
+                       <StyleRoot> 
+                        <div className="preview_services_container"  
+                             style={animation_styles.service_preview_boxes.revenue_cycle_management}>
                            <div className="preview_service_revenue_cycle_management"> 
                                 <Card className={classes.root}>
                                     <CardHeader
@@ -81,29 +84,36 @@ const Home = () => {
                                 </Card>
                             </div>
                         </div>
+                       </StyleRoot>
+                       </ScrollAnimation>
                     </Grid>
                     
                     <Grid item xs={2}>
-                        <div className="preview_services_container">
-                           <div className="preview_service_revenue_cycle_management"> 
-                                <Card className={classes.root}>
-                                    <CardHeader
-                                        avatar={
-                                        <Avatar aria-label="recipe" className={classes.staff_augmentation}>
-                                            S
-                                        </Avatar>
-                                        }
-                                    />
-                                    <CardContent>
-                                       <div> 
-                                            <p className="preview_service_revenue_cycle_management_text">
-                                                Staff Augmentation
-                                            </p>
-                                        </div>
-                                    </CardContent>
-                                </Card>
+                        <ScrollAnimation animateIn="fadeIn" duration={3}> 
+                          <StyleRoot>  
+                            <div className="preview_services_container"
+                                 style={animation_styles.service_preview_boxes.staff_augmentation}>
+                            <div className="preview_service_revenue_cycle_management"> 
+                                    <Card className={classes.root}>
+                                        <CardHeader
+                                            avatar={
+                                            <Avatar aria-label="recipe" className={classes.staff_augmentation}>
+                                                S
+                                            </Avatar>
+                                            }
+                                        />
+                                        <CardContent>
+                                        <div> 
+                                                <p className="preview_service_revenue_cycle_management_text">
+                                                    Staff Augmentation
+                                                </p>
+                                            </div>
+                                        </CardContent>
+                                    </Card>
+                                </div>
                             </div>
-                        </div>
+                            </StyleRoot>
+                            </ScrollAnimation>
                     </Grid>
     
                     <Grid item xs={6}>
@@ -112,7 +122,7 @@ const Home = () => {
                                     <h2 className="services_heading" style={animation_styles.bounceIn}>
                                             <span>Services.</span>
                                     </h2>
-                                    <p className="services_overview">
+                                    <p className="services_overview" style={animation_styles.service_over_desc}>
                                     We offer customized digital services and scalable operational strategies 
                                     to prepare your Organization ride through the waves of uncertainty in 
                                     the form of disruptive technology and government regulations so you 
@@ -125,7 +135,9 @@ const Home = () => {
 
                 <Grid container>
                     <Grid item xs={2}>
-                        <div className="preview_services_container">
+                    <ScrollAnimation animateIn="fadeIn" duration={3}> 
+                          <StyleRoot>   
+                        <div className="preview_services_container" style={animation_styles.service_preview_boxes.payment_posting}>
                            <div className="preview_service_revenue_cycle_management"> 
                                 <Card className={classes.root}>
                                     <CardHeader
@@ -145,10 +157,15 @@ const Home = () => {
                                 </Card>
                             </div>
                         </div>
+                        </StyleRoot>
+                        </ScrollAnimation>
                     </Grid>
                     
                     <Grid item xs={2}>
-                        <div className="preview_services_container">
+                        <ScrollAnimation animateIn="fadeIn" duration={3}> 
+                            <StyleRoot>  
+                        <div className="preview_services_container" 
+                             style={animation_styles.service_preview_boxes.reason_code_mapping}>
                            <div className="preview_service_revenue_cycle_management"> 
                                 <Card className={classes.root}>
                                     <CardHeader
@@ -168,10 +185,15 @@ const Home = () => {
                                 </Card>
                             </div>
                         </div>
+                        </StyleRoot>
+                        </ScrollAnimation>
                     </Grid>
                     
                     <Grid item xs={2}>
-                        <div className="preview_services_container">
+                    <ScrollAnimation animateIn="fadeIn" duration={3}> 
+                          <StyleRoot>   
+                        <div className="preview_services_container" 
+                             style={animation_styles.service_preview_boxes.product_management}>
                            <div className="preview_service_revenue_cycle_management"> 
                                 <Card className={classes.root}>
                                     <CardHeader
@@ -191,6 +213,8 @@ const Home = () => {
                                 </Card>
                             </div>
                         </div>
+                        </StyleRoot>
+                        </ScrollAnimation>
                     </Grid>
 
                     {/* <Grid item xs={6}>
@@ -209,7 +233,9 @@ const Home = () => {
 
                 <Grid container>
                     <Grid item xs={2}>
-                        <div className="preview_services_container">
+                        <ScrollAnimation animateIn="fadeIn" duration={3}> 
+                            <StyleRoot>   
+                        <div className="preview_services_container" style={animation_styles.service_preview_boxes.virtual_assistant}>
                            <div className="preview_service_revenue_cycle_management"> 
                                 <Card className={classes.root}>
                                     <CardHeader
@@ -229,10 +255,15 @@ const Home = () => {
                                 </Card>
                             </div>
                         </div>
+                        </StyleRoot>
+                        </ScrollAnimation>
                     </Grid>
                    
                     <Grid item xs={2}>
-                        <div className="preview_services_container">
+                        <ScrollAnimation animateIn="fadeIn" duration={3}> 
+                                <StyleRoot>   
+                        <div className="preview_services_container" 
+                             style={animation_styles.service_preview_boxes.correspondence_management}>
                            <div className="preview_service_revenue_cycle_management"> 
                                 <Card className={classes.root}>
                                     <CardHeader
@@ -252,6 +283,8 @@ const Home = () => {
                                 </Card>
                             </div>
                         </div>
+                        </StyleRoot>
+                        </ScrollAnimation>
                     </Grid>
                 </Grid>
               
