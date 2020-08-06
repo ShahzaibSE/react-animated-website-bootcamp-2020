@@ -105,6 +105,7 @@ const Home = () => {
                             </div>
                         </div>
                     </Grid>
+    
                 </Grid>
 
                 <Grid container>
@@ -225,6 +226,7 @@ const Home = () => {
                         </div>
                     </Grid>
                 </Grid>
+              
             </Grid>
         </Grid>
     )

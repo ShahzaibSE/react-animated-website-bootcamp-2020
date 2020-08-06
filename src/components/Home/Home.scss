@@ -67,3 +67,14 @@
     color: #638db9;
     font-weight:bold;
 }
+
+.services_heading{
+        font-size: calc((12 *(1em - 14px) - -2em - 1px));
+        color:#003a78;
+        line-height: 1.2;
+        font-weight: 700;
+        font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        padding-top:150px;
+        z-index: 0;
+        // width:50%;
+}
