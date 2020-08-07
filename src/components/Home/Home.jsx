@@ -4,14 +4,13 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import {StyleRoot} from 'radium';
 import {Grid, Card, CardContent, Typography, CardHeader} from "@material-ui/core";
 import Avatar from '@material-ui/core/Avatar';
-import { red } from '@material-ui/core/colors';
 import {useStyles, animation_styles} from "./Home.style";
 // Assets.
 import "./Home.scss"
 import landing_page from "./../../images/landing-page.jpg"
 import "animate.css/animate.min.css" // Scroller dependency.
 import meeting_in_motion from "./../../images/meeting.gif";
-import { styles } from 'react-animations/lib/swing';
+import design_background from "./../../images/design-background.png"
 
 const Home = () => {
     // Web Animation API config.
