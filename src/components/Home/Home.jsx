@@ -34,7 +34,7 @@ const Home = () => {
             </Grid>
             <Grid item xs={6}>
               <StyleRoot>  
-                <div className="meeting_svg" style={animation_styles.shake_meeting}>
+                <div className="meeting_svg meeting_svg_background" style={animation_styles.shake_meeting}>
                     <ScrollAnimation animateIn="fadeInLeft" duration={3} offset={100}>
                         <div>
                             <img src={meeting_in_motion} alt="Meeting"/>
@@ -57,7 +57,7 @@ const Home = () => {
                 </div>
             </Grid>
 
-            <Grid xs={12}>
+            <Grid item xs={12}>
                 <Grid container>
                     <Grid item xs={2}>
                       <ScrollAnimation animateIn="fadeIn" duration={3}>  

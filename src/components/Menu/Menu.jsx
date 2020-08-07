@@ -38,7 +38,7 @@ const Menu = () => {
                     <ul>
                         <li><Link to="/" onClick={handleClassChange}>Home</Link></li>
                         <li><Link to="about" onClick={handleClassChange}>About</Link></li>
-                        <li><Link to="service" onClick={handleClassChange}>Services</Link></li>
+                        <li><Link to="services" onClick={handleClassChange}>Services</Link></li>
                         <li><Link to="contactus" onClick={handleClassChange}>Contact Us</Link></li>
                     </ul>
             </div>

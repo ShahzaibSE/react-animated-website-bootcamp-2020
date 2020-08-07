@@ -1,0 +1,18 @@
+.service_page_heading_container{
+    z-index:1;
+    padding-bottom:70%;
+}
+.service_page_heading{
+    font-size: calc((21 *(1em - 13px) - -2em - 1px));
+    color:#003a78;
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    padding-top:50px;
+    z-index: 0;
+    width:50%;
+    position: absolute;
+    top:0;
+    left:0;
+    padding-left:35px;
+}
