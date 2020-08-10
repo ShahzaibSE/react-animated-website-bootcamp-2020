@@ -22,14 +22,30 @@ import "animate.css/animate.min.css" // Scroller dependency.
 import service_landing_animation from "./../../images/services-landing-animation.gif"
 import {services_animations} from "./Services.style"
 import {serviceUseStyles} from "./Services.style";
+import list_number_1 from "./../../images/number-1.gif"
+import list_number_2 from "./../../images/number-2.gif"
+import list_number_3 from "./../../images/number-3.gif"
 
 const ServicesComponent = () => {
     const {ref} = useWebAnimations({...fadeIn, timing:{duration: 4000}})
     const classes = serviceUseStyles();
-    const [open, setOpen] = React.useState(true);
+    const [open_1, setOpen1] = React.useState(true);
+    const [open_2, setOpen2] = React.useState(true);
+    const [open_3, setOpen3] = React.useState(true);
     // Collapser.
-    const handleClick = () => {
-        setOpen(!open);
+    const handleClick = (list_number) => {
+       if (list_number === 1) {
+           setOpen1(!open_1)
+           console.log(`List Number ${list_number} expanded`)
+       }
+       if (list_number === 2) {
+           setOpen2(!open_2)
+           console.log(`List Number ${list_number} expanded`)
+       }
+       if(list_number === 3){
+           setOpen3(!open_3);
+           console.log(`List Number ${list_number} expanded`)
+       }
     };
     //
     return (
@@ -56,36 +72,54 @@ const ServicesComponent = () => {
                 </StyleRoot> 
             </Grid>
             <Grid item xs={12}>
-                        <List
-                component="nav"
-                aria-labelledby="nested-list-subheader"
-                subheader={
-                    <ListSubheader component="div" id="nested-list-subheader">
-                    Nested List Items
-                    </ListSubheader>
-                }
-                className={classes.root}
+                <div className="list-container">
+                    <List component="nav" aria-labelledby="nested-list-subheader"
+                       className={classes.root}
                 >
-                <ListItem button>
+                <ListItem button onClick={()=>{handleClick(1)}}>
                     <ListItemIcon>
-                    <SendIcon />
+                        <img className="list-item-number" src={list_number_1} alt="List Item 1" /> 
                     </ListItemIcon>
-                    <ListItemText primary="Sent mail" />
+                    <ListItemText><h5 className="list_text">Revenue Cycle Management</h5></ListItemText>
+                    {open_1 ? <ExpandLess /> : <ExpandMore />}
                 </ListItem>
-                <ListItem button>
+                <Collapse in={open_1} timeout="auto" unmountOnExit>
+                    <List component="div" disablePadding>
+                    <ListItem button className={classes.nested}>
+                        <ListItemIcon>
+                        <StarBorder />
+                        </ListItemIcon>
+                        <ListItemText primary="Starred" />
+                    </ListItem>
+                    </List>
+                </Collapse>
+
+                <ListItem button onClick={()=>{handleClick(2)}}>
                     <ListItemIcon>
-                    <DraftsIcon />
+                    <img className="list-item-number" src={list_number_2} alt="List Item 2" /> 
                     </ListItemIcon>
-                    <ListItemText primary="Drafts" />
+                    <ListItemText><h5 className="list_text">Staff Augmentation</h5></ListItemText>
+                    {open_2 ? <ExpandLess /> : <ExpandMore />}
                 </ListItem>
-                <ListItem button onClick={handleClick}>
+                <Collapse in={open_2} timeout="auto" unmountOnExit>
+                    <List component="div" disablePadding>
+                    <ListItem button className={classes.nested}>
+                        <ListItemIcon>
+                        <StarBorder />
+                        </ListItemIcon>
+                        <ListItemText primary="Starred" />
+                    </ListItem>
+                    </List>
+                </Collapse>
+
+                <ListItem button onClick={()=>{handleClick(3)}}>
                     <ListItemIcon>
-                    <InboxIcon />
+                    <img className="list-item-number" src={list_number_3} alt="List Item 3" /> 
                     </ListItemIcon>
-                    <ListItemText primary="Inbox" />
-                    {open ? <ExpandLess /> : <ExpandMore />}
+                    <ListItemText><h5 className="list_text">Product Management</h5></ListItemText>
+                    {open_3 ? <ExpandLess /> : <ExpandMore />}
                 </ListItem>
-                <Collapse in={open} timeout="auto" unmountOnExit>
+                <Collapse in={open_3} timeout="auto" unmountOnExit>
                     <List component="div" disablePadding>
                     <ListItem button className={classes.nested}>
                         <ListItemIcon>
@@ -96,6 +130,7 @@ const ServicesComponent = () => {
                     </List>
                 </Collapse>
                 </List>
+                </div>
             </Grid>
         </Grid>
     )

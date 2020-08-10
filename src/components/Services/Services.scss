@@ -21,3 +21,29 @@
     padding-left:20%;
     padding-top:10px;
 }
+
+.list-container {
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 200px;
+    border-style: solid;
+    padding: 50px;
+    border-radius: 20px;
+    border-style:solid;
+}
+
+.list-item-number{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+
+.list_text {
+    font-size: calc((3.5 *(1em - 13px) - -2em - 7px));
+    padding-left:35px;
+    color: #003a78;
+    line-height: 1;
+    letter-spacing: 0;
+    font-weight: 500;
+    cursor: pointer;
+}
