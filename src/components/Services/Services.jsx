@@ -85,12 +85,21 @@ const ServicesComponent = () => {
                 </ListItem>
                 <Collapse in={open_1} timeout="auto" unmountOnExit>
                     <List component="div" disablePadding>
-                    <ListItem button className={classes.nested}>
-                        <ListItemIcon>
-                        <StarBorder />
-                        </ListItemIcon>
-                        <ListItemText primary="Starred" />
-                    </ListItem>
+                    <ListItemText><p class="list_item_desc">
+                    Revenue Cycle Management – Within the wide spectrum of RCM, we can provide specific and 
+                    tailored support into targeted areas that have a broad impact to the 
+                    organization’s efficiency and bottom-line.
+                        </p></ListItemText>
+                        <ListItem style={{paddingLeft:"15%"}}>
+                           <ListItemIcon><StarBorder/></ListItemIcon>
+                           <ListItemText><h6 className="nested_list_item_desc">Payment Posting</h6></ListItemText>
+                        </ListItem>    
+                        <ListItem style={{paddingLeft:"15%"}}>
+                            <ListItemText><p className="nested_list_item_explaination">
+                            Update your accounts receivable efficiently so that downstream processes 
+                            such as denials processing, patient payments, and collections are not delayed.
+                                </p></ListItemText>
+                        </ListItem>
                     </List>
                 </Collapse>
 
@@ -121,12 +130,9 @@ const ServicesComponent = () => {
                 </ListItem>
                 <Collapse in={open_3} timeout="auto" unmountOnExit>
                     <List component="div" disablePadding>
-                    <ListItem button className={classes.nested}>
                         <ListItemIcon>
-                        <StarBorder />
+                            <StarBorder />
                         </ListItemIcon>
-                        <ListItemText primary="Starred" />
-                    </ListItem>
                     </List>
                 </Collapse>
                 </List>
