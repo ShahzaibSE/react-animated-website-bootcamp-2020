@@ -85,19 +85,40 @@ const ServicesComponent = () => {
                 </ListItem>
                 <Collapse in={open_1} timeout="auto" unmountOnExit>
                     <List component="div" disablePadding>
-                    <ListItemText><p class="list_item_desc">
+                    <ListItemText><p className="list_item_desc">
                     Revenue Cycle Management – Within the wide spectrum of RCM, we can provide specific and 
                     tailored support into targeted areas that have a broad impact to the 
                     organization’s efficiency and bottom-line.
                         </p></ListItemText>
                         <ListItem style={{paddingLeft:"15%"}}>
                            <ListItemIcon><StarBorder/></ListItemIcon>
-                           <ListItemText><h6 className="nested_list_item_desc">Payment Posting</h6></ListItemText>
+                            <ListItemText>
+                                    <h6 className="nested_list_item_desc">Payment Posting</h6>
+                            </ListItemText>
                         </ListItem>    
                         <ListItem style={{paddingLeft:"15%"}}>
                             <ListItemText><p className="nested_list_item_explaination">
                             Update your accounts receivable efficiently so that downstream processes 
                             such as denials processing, patient payments, and collections are not delayed.
+                                </p></ListItemText>
+                        </ListItem>
+                        <ListItem style={{paddingLeft:"15%"}}>
+                           <ListItemIcon><StarBorder/></ListItemIcon>
+                           <ListItemText><h6 className="nested_list_item_desc">Correspondance Management</h6></ListItemText>
+                        </ListItem>    
+                        <ListItem style={{paddingLeft:"15%"}}>
+                            <ListItemText><p className="nested_list_item_explaination">
+                            Process and sort correspondence into organized buckets for efficient review and action.
+                                </p></ListItemText>
+                        </ListItem>
+                        <ListItem style={{paddingLeft:"15%"}}>
+                           <ListItemIcon><StarBorder/></ListItemIcon>
+                           <ListItemText><h6 className="nested_list_item_desc">Reason Code Mapping</h6></ListItemText>
+                        </ListItem>    
+                        <ListItem style={{paddingLeft:"15%"}}>
+                            <ListItemText><p className="nested_list_item_explaination">
+                            Standardize all payer specific proprietary codes and descriptions into ANSI standard CARCs and RARCs 
+                            and thereby improving denials reporting and management.
                                 </p></ListItemText>
                         </ListItem>
                     </List>
@@ -111,13 +132,69 @@ const ServicesComponent = () => {
                     {open_2 ? <ExpandLess /> : <ExpandMore />}
                 </ListItem>
                 <Collapse in={open_2} timeout="auto" unmountOnExit>
-                    <List component="div" disablePadding>
-                    <ListItem button className={classes.nested}>
-                        <ListItemIcon>
-                        <StarBorder />
-                        </ListItemIcon>
-                        <ListItemText primary="Starred" />
-                    </ListItem>
+                <List component="div" disablePadding>
+                    <ListItemText><p className="list_item_desc">
+                    Managing an inhouse workforce has its challenges. By becoming your extended business office, 
+                    we reduce your effort and allow you to focus on your core business by providing:
+                        </p></ListItemText>
+                        <ListItem style={{paddingLeft:"15%"}}>
+                           <ListItemIcon><StarBorder/></ListItemIcon>
+                           <ListItemText><h6 className="nested_list_item_desc">Throughput</h6></ListItemText>
+                        </ListItem>    
+                        <ListItem style={{paddingLeft:"15%"}}>
+                           <ListItemIcon><StarBorder/></ListItemIcon>
+                           <ListItemText><h6 className="nested_list_item_desc">Efficiency</h6></ListItemText>
+                        </ListItem>    
+                        <ListItem style={{paddingLeft:"15%"}}>
+                           <ListItemIcon><StarBorder/></ListItemIcon>
+                           <ListItemText><h6 className="nested_list_item_desc">Scale</h6></ListItemText>
+                        </ListItem>    
+                        <br/>
+                        <ListItem style={{paddingLeft:"15%"}}>
+                            <ListItemText><p className="nested_list_item_explaination">
+                            Once we understand your process, we can take over identifying and hiring staff with the right skill set, 
+                            training and managing certified staff to meet your expectation.
+                                </p></ListItemText>
+                        </ListItem>
+                        <ListItem style={{paddingLeft:"15%"}}>
+                           <ListItemIcon><StarBorder/></ListItemIcon>
+                           <ListItemText><h6 className="nested_list_item_desc">Enrollement</h6></ListItemText>
+                        </ListItem>    
+                        <ListItem style={{paddingLeft:"15%"}}>
+                           <ListItemIcon><StarBorder/></ListItemIcon>
+                           <ListItemText><h6 className="nested_list_item_desc">Demographic Entry</h6></ListItemText>
+                        </ListItem>    
+                        <ListItem style={{paddingLeft:"15%"}}>
+                           <ListItemIcon><StarBorder/></ListItemIcon>
+                           <ListItemText><h6 className="nested_list_item_desc">Data Transcription / Translation</h6></ListItemText>
+                        </ListItem> 
+                        <br/>   
+                        <ListItem style={{paddingLeft:"15%"}}>
+                            <ListItemText><p className="nested_list_item_explaination">
+                            With today’s global market, productivity is highly valued. 
+                            Virtual Assistants can offer that extra pair of hands to help assist with any daily, routine tasks.
+                                </p></ListItemText>
+                        </ListItem>
+                        <ListItem style={{paddingLeft:"15%"}}>
+                           <ListItemIcon><StarBorder/></ListItemIcon>
+                           <ListItemText><h6 className="nested_list_item_desc">Scheduling appointments with reminders</h6></ListItemText>
+                        </ListItem>    
+                        <ListItem style={{paddingLeft:"15%"}}>
+                           <ListItemIcon><StarBorder/></ListItemIcon>
+                           <ListItemText><h6 className="nested_list_item_desc">Travel arrangements (hotel, flight, conference registration)</h6></ListItemText>
+                        </ListItem>    
+                        <ListItem style={{paddingLeft:"15%"}}>
+                           <ListItemIcon><StarBorder/></ListItemIcon>
+                           <ListItemText><h6 className="nested_list_item_desc">Creating presentations (content given)</h6></ListItemText>
+                        </ListItem>    
+                        <ListItem style={{paddingLeft:"15%"}}>
+                           <ListItemIcon><StarBorder/></ListItemIcon>
+                           <ListItemText><h6 className="nested_list_item_desc">Tracking expenses</h6></ListItemText>
+                        </ListItem>    
+                        <ListItem style={{paddingLeft:"15%"}}>
+                           <ListItemIcon><StarBorder/></ListItemIcon>
+                           <ListItemText><h6 className="nested_list_item_desc">Updating resumes</h6></ListItemText>
+                        </ListItem>    
                     </List>
                 </Collapse>
 
@@ -129,10 +206,24 @@ const ServicesComponent = () => {
                     {open_3 ? <ExpandLess /> : <ExpandMore />}
                 </ListItem>
                 <Collapse in={open_3} timeout="auto" unmountOnExit>
-                    <List component="div" disablePadding>
-                        <ListItemIcon>
-                            <StarBorder />
-                        </ListItemIcon>
+                <List component="div" disablePadding>
+                    <ListItemText><p class="list_item_desc">
+                    Operational improvements through technology enhancements and/or service functions, we provide a fresh lens in helping you achieve your goals. 
+                    Having specified, designed, and implemented proven market tools, 
+                    we can get you where you need to go through:
+                        </p></ListItemText>
+                        <ListItem style={{paddingLeft:"15%"}}>
+                           <ListItemIcon><StarBorder/></ListItemIcon>
+                           <ListItemText><h6 className="nested_list_item_desc">Process Refinement</h6></ListItemText>
+                        </ListItem>    
+                        <ListItem style={{paddingLeft:"15%"}}>
+                           <ListItemIcon><StarBorder/></ListItemIcon>
+                           <ListItemText><h6 className="nested_list_item_desc">Workflow Optimization</h6></ListItemText>
+                        </ListItem>    
+                        <ListItem style={{paddingLeft:"15%"}}>
+                           <ListItemIcon><StarBorder/></ListItemIcon>
+                           <ListItemText><h6 className="nested_list_item_desc">Product/Software Testing</h6></ListItemText>
+                        </ListItem>    
                     </List>
                 </Collapse>
                 </List>
