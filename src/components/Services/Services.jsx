@@ -29,21 +29,27 @@ import list_number_3 from "./../../images/number-3.gif"
 const ServicesComponent = () => {
     const {ref} = useWebAnimations({...fadeIn, timing:{duration: 4000}})
     const classes = serviceUseStyles();
-    const [open_1, setOpen1] = React.useState(true);
-    const [open_2, setOpen2] = React.useState(true);
-    const [open_3, setOpen3] = React.useState(true);
+    const [open_1, setOpen1] = React.useState(false);
+    const [open_2, setOpen2] = React.useState(false);
+    const [open_3, setOpen3] = React.useState(false);
     // Collapser.
     const handleClick = (list_number) => {
        if (list_number === 1) {
            setOpen1(!open_1)
+           setOpen2(false)
+           setOpen3(false)
            console.log(`List Number ${list_number} expanded`)
        }
        if (list_number === 2) {
            setOpen2(!open_2)
+           setOpen1(false)
+           setOpen3(false)
            console.log(`List Number ${list_number} expanded`)
        }
        if(list_number === 3){
            setOpen3(!open_3);
+           setOpen1(false);
+           setOpen2(false);
            console.log(`List Number ${list_number} expanded`)
        }
     };

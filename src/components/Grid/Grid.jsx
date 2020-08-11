@@ -7,6 +7,7 @@ import Home from "./../Home/Home"
 import About from "./../About/About"
 import Footer from "./../Footer/Footer"
 import ServicesComponent from './../Services/Services'
+import ContactUs from "./../ContactUs/ContactUs"
 
 const GridComponent = () => {
     return (
@@ -20,6 +21,7 @@ const GridComponent = () => {
                         <Route path="/" element={<Home/>}/>
                         <Route path="about" element={<About/>}/>
                         <Route path="services" element={<ServicesComponent/>} />
+                        <Route path="contactus" element={<ContactUs/>} />
                     </Routes>
                 </Grid>
                 <Grid item xs={12}>
