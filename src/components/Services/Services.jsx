@@ -38,19 +38,16 @@ const ServicesComponent = () => {
            setOpen1(!open_1)
            setOpen2(false)
            setOpen3(false)
-           console.log(`List Number ${list_number} expanded`)
        }
        if (list_number === 2) {
            setOpen2(!open_2)
            setOpen1(false)
            setOpen3(false)
-           console.log(`List Number ${list_number} expanded`)
        }
        if(list_number === 3){
            setOpen3(!open_3);
            setOpen1(false);
            setOpen2(false);
-           console.log(`List Number ${list_number} expanded`)
        }
     };
     //
