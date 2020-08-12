@@ -4,6 +4,7 @@ import {AddCircle, AddAPhoto} from '@material-ui/icons'
 import {Button} from "@material-ui/core"
 // Assets.
 import "./Menu.scss"
+import logo from "./../../images/website-logo.png"
 
 const Menu = () => {
     const [toggleButtonClass, setToggleButtonClass] = useState(false)
@@ -30,17 +31,21 @@ const Menu = () => {
     // },[])
 
     return (
-        <div id="menu_container">
-            {/* <Button className={toggleButtonClass ? "toggle_active":"toggle"} onClick={handleClassChange}><AddCircle/></Button> */}
-            <div className="toggle" onClick={handleClassChange}></div>
-            <div className={toggleButtonClass ? "overlay_active":"overlay"}></div>
-            <div className={toggleButtonClass ? "menu_active":"menu"}>
-                    <ul>
-                        <li><Link to="/" onClick={handleClassChange}>Home</Link></li>
-                        <li><Link to="about" onClick={handleClassChange}>About</Link></li>
-                        <li><Link to="services" onClick={handleClassChange}>Services</Link></li>
-                        <li><Link to="contactus" onClick={handleClassChange}>Contact Us</Link></li>
-                    </ul>
+       <div> 
+           <div id="logo_container">
+                        <img id="logo_style" src={logo} alt="Crypto Space" width={100} height={100}/>
+            </div>
+            <div id="menu_container">
+                {/* <Button className={toggleButtonClass ? "toggle_active":"toggle"} onClick={handleClassChange}><AddCircle/></Button> */}
+                <div className="toggle" onClick={handleClassChange}></div>
+                <div className={toggleButtonClass ? "overlay_active":"overlay"}></div>
+                <div className={toggleButtonClass ? "menu_active":"menu"}>
+                        <ul>
+                            <li><Link to="/" onClick={handleClassChange}>Home</Link></li>
+                            <li><Link to="services" onClick={handleClassChange}>Services</Link></li>
+                            <li><Link to="contactus" onClick={handleClassChange}>Contact Us</Link></li>
+                        </ul>
+                </div>
             </div>
         </div>
     )

@@ -1,4 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
+import Radium from 'radium';
+import {fadeInUp,fadeIn, pulse} from "react-animations"
 
 export const contactUsStyle = makeStyles((theme) => ({
     root: {
@@ -17,3 +19,18 @@ export const contactUsStyle = makeStyles((theme) => ({
         marginTop: 20
     }
 }));
+
+export const contactAnimations = {
+    fadeIn_formcontrols: {
+        animation: "form_control_animation 1s",
+        animationName: Radium.keyframes(fadeInUp, 'fadeInUp')
+    },
+    text_animation: {
+        animation:"text_animation 2s 2s Infinite",
+        animationName: Radium.keyframes(pulse, 'pulse')
+    },
+    gif_animation: {
+        animation: "gif_animation 3s",
+        animationName: Radium.keyframes(fadeIn, "fadeIn")
+    }
+}

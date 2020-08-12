@@ -19,7 +19,7 @@ export const services_animations = {
         animationName: Radium.keyframes(pulse, 'pulse')
       },
     list_bullets_headings: {
-      animation: "bullet_headings 1s 3s infinite",
+      animation: "bullet_headings 3s 3s infinite",
       animationName: Radium.keyframes(flash, 'flash')
     }   
 }

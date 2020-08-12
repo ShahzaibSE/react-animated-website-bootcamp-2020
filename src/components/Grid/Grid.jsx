@@ -19,7 +19,6 @@ const GridComponent = () => {
                 <Grid item xs={12}>
                     <Routes>
                         <Route path="/" element={<Home/>}/>
-                        <Route path="about" element={<About/>}/>
                         <Route path="services" element={<ServicesComponent/>} />
                         <Route path="contactus" element={<ContactUs/>} />
                     </Routes>
