@@ -1,3 +1,36 @@
 .contact_us_gif_container{
     margin-left: 35px;
+    margin-top:10%;
+    border-radius: 10px;
 }
+
+.contact_us_form_container{
+    margin-top:15%;
+}
+
+.contact_us_form_heading {
+    font-size: calc((11 *(1em - 13px) - -2em - 3px));
+    color: #003a78;
+    line-height: 1.2;
+    letter-spacing: 0;
+    margin-bottom: 10px;
+}
+
+.contact_us_form_heading_description {
+    font-size: calc((-.2 *(1em - 13px) - -2em - 13px));
+    color: #363636;
+    line-height: 1;
+    letter-spacing: 0;
+}
+
+// .submitBtn{
+//     background-color: #003a78;
+//     border: none;
+//     width: 100%;
+//     font-size: calc((-.2 *(1em - 13px) - -2em - 13px));
+//     cursor: pointer;
+//     color: #fff;
+//     border-radius: 6px;
+//     line-height: 68px;
+//     margin-top: 20px;
+// }
