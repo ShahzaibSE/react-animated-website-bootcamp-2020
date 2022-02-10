@@ -11,7 +11,7 @@
     "cra-template": "1.0.3",
     "fontsource-roboto": "^3.0.3",
     "history": "^5.0.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "radium": "^0.26.0",
     "react": "^16.13.1",
     "react-animate-on-scroll": "^2.1.5",
